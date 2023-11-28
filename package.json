@@ -1,12 +1,12 @@
 {
-  "name": "nuxt3-starter",
+  "name": "EduTechN3-B5",
   "version": "0.1.0",
-  "description": "a Nuxt 3 starter template or boilerplate with a lot of useful features. Nuxt3 + Bootstrap 5",
+  "description": "",
   "repository": {
     "type": "git",
-    "url": "git://https://github.com/irabbi360/nuxt3-starter"
+    "url": "git://https://github.com/a7medsamirf/EduTechN3-B5"
   },
-  "author": "irabbi360",
+  "author": "Ahmed Samir",
   "license": "MIT",
   "private": true,
   "scripts": {
