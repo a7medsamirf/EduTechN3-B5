@@ -27,7 +27,10 @@ export default defineNuxtConfig({
             mode: 'client'
         }
     ],
-    components: {global: true, dirs: ['~/components']},
+   /*  components: {global: true, dirs: ['~/components']}, */
+
+    components: [{ path: '~/components', pathPrefix: false,},],
+
     modules: [
         '@nuxtjs/i18n',
     ],
