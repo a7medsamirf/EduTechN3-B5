@@ -13,7 +13,12 @@ export default defineNuxtConfig({
             title: 'Nuxt 3 Starter Template',
             meta: [
                 // <meta name="description" content="My amazing site">
-                {name: 'description', content: 'Nuxt 3 Starter'}
+                { charset: 'utf-8' },
+                { name: 'viewport', content: 'width=device-width, initial-scale=1' },
+                { hid: 'description', name: 'description', content: '' },
+                { name: 'description', content: 'Nuxt 3 Starter'},
+                { name: 'format-detection', content: 'telephone=no' },
+                { name : 'theme-color', content: '#07AEAF'}
             ],
         }
     },
@@ -22,7 +27,9 @@ export default defineNuxtConfig({
     css: ['~/assets/scss/style.scss', '~/assets/css/dashboard.css'],
 
     plugins: [
+        {src: '~/plugins/i18n-config.js' },
         {
+            
             src: 'plugins/bootstrap.js',
             mode: 'client'
         }
@@ -43,27 +50,28 @@ export default defineNuxtConfig({
         locales: [
             {
                 code: 'en',
+                iso: 'en-US',
                 name: 'English',
-                file: 'en-US.json'
-            },
+                file: 'en-US.json',
+                dir: 'ltr',
+                icon: 'flag-en.svg'
+              },
             {
-                code: 'es',
-                name: 'Español',
-                file: 'es-ES.json'
-            },
-            {
-                code: 'fr',
-                name: 'Français',
-                file: 'fr-FR.json'
-            },
-            {
-                code: 'Ja',
-                name: '日本人',
-                file: 'ja-JA.json'
-            }
+                code: 'ar',
+                iso: 'ar-AR',
+                name: 'AR',
+                file: 'ar-EG.json',
+                dir: 'rtl',
+                icon: 'flag-ar.svg'
+              },
         ],
         lazy: true,
         langDir: 'locales',
-        defaultLocale: 'en'
+        defaultLocale: 'en',
+        detectBrowserLanguage: {
+            useCookie: true,
+            cookieKey: 'i18n_redirected',
+            alwaysRedirect: true
+          },
     }
 })
