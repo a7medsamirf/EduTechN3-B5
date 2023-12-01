@@ -27,7 +27,7 @@ export default defineNuxtConfig({
     css: ['~/assets/scss/style.scss', '~/assets/css/dashboard.css'],
 
     plugins: [
-        {src: '~/plugins/i18n-config.js' },
+
         {
             
             src: 'plugins/bootstrap.js',
@@ -41,7 +41,12 @@ export default defineNuxtConfig({
     modules: [
         '@nuxtjs/i18n',
     ],
-    i18n: {
+
+/*     i18n: {
+        vueI18n: "~/plugins/i18n.config.ts",
+      }, */
+
+/*     i18n: {
         strategy: 'no_prefix',
         vueI18n: {
             legacy: false,
@@ -73,5 +78,5 @@ export default defineNuxtConfig({
             cookieKey: 'i18n_redirected',
             alwaysRedirect: true
           },
-    }
+    } */
 })

@@ -41,10 +41,11 @@
       <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
       <h1 class="display-4 fw-normal text-body-emphasis">Why CuriousKids?</h1>
       <p class="fs-5 text-body-secondary">Engaging, enjoyable, retention, motivation, creativity, positive, adaptive, participation, social skills.</p>
+      <button type="button" class="btn btn-primary">Primary</button>
     </div>
    
 <div class="row">
-<div class="col col-md-4" v-for="(item, index) in WhyUs" :key="index">
+<div class="col col-md-4 mt-3" v-for="(item, index) in WhyUs" :key="index">
 <div class="card" :style="{ backgroundColor: item.color }">
 
 <!-- 
@@ -79,7 +80,7 @@
     box-shadow: 6px 6px #000;
     border: 2.5px solid #000;
     border-color: #000 !important;
-
+    border-radius: 16px !important;
 
 }
 .card:hover{
@@ -89,5 +90,28 @@
     color: #fff;
 }
 
+
+.btn.btn-primary{
+  cursor: pointer;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    padding: 15px 40px;
+    transition: all 0.5s ease-in-out;
+    border-width: 2px;
+    box-shadow: 6px 6px #000;
+    border: 2.5px solid #000;
+    border-color: #000 !important;
+    background-color: #ffe500;
+    color: #000;
+}
+
+.btn.btn-primary:hover {
+    transform: scale(0.95);
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+    color: #fff;
+}
 </style>
 

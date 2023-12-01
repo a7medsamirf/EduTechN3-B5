@@ -1,5 +1,5 @@
 <template>
-  <div :dir="$dir()">
+  <div >
         <Navbar/>
         <slot />
     </div>

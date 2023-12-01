@@ -19,6 +19,7 @@
           </li>
           <ThemeChanger />
           <LangSwitcher />
+<!--           <LanguageSelector /> -->
           <li class="nav-item">
             <NuxtLink to="/auth/login" class="nav-link">Login</NuxtLink>
           </li>
