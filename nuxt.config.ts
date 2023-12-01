@@ -1,6 +1,7 @@
 // https://nuxt.com/docs/api/configuration/nuxt-config
 
 export default defineNuxtConfig({
+    devtools: { enabled: true },
     runtimeConfig: {
         public: {
             API_BASE_URL: process.env.API_URL
@@ -8,6 +9,7 @@ export default defineNuxtConfig({
     },
     app: {
         head: {
+            htmlAttrs: { dir: 'rtl', lang: 'ar' },
             charset: 'utf-16',
             viewport: 'width=500, initial-scale=1',
             title: 'Nuxt 3 Starter Template',
@@ -18,9 +20,19 @@ export default defineNuxtConfig({
                 { hid: 'description', name: 'description', content: '' },
                 { name: 'description', content: 'Nuxt 3 Starter'},
                 { name: 'format-detection', content: 'telephone=no' },
-                { name : 'theme-color', content: '#07AEAF'}
+                { name : 'theme-color', content: '#07AEAF'},
             ],
-        }
+            link: [
+                {
+                  rel: 'stylesheet',
+                  href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap',
+                  crossorigin: ''
+                }
+              ],
+        },
+        
+    layoutTransition: { name: 'layout', mode: 'out-in' }
+
     },
     ssr: process.env.NODE_ENV !== "development",
 
