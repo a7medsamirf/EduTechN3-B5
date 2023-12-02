@@ -51,7 +51,7 @@
         </div>
 
         <div class="row">
-          <div class="col mt-3" v-for="(item, index) in WhyUs" :key="index">
+          <div class="col-lg-6 mt-3" v-for="(item, index) in WhyUs" :key="index">
             <div class="card" :style="{ backgroundColor: item.Bgcolor }">
            <img class="card-img-top w-25" :src="item.images" :alt="item.title">
               <div class="card-body">

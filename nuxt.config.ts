@@ -2,11 +2,6 @@
 
 export default defineNuxtConfig({
     devtools: { enabled: true },
-    runtimeConfig: {
-        public: {
-            API_BASE_URL: process.env.API_URL
-        }
-    },
     app: {
         head: {
             htmlAttrs: { dir: 'rtl', lang: 'ar' },
@@ -34,7 +29,6 @@ export default defineNuxtConfig({
     layoutTransition: { name: 'layout', mode: 'out-in' }
 
     },
-    ssr: process.env.NODE_ENV !== "development",
 
     css: ['~/assets/scss/style.scss', '~/assets/css/dashboard.css'],
 
@@ -49,46 +43,4 @@ export default defineNuxtConfig({
    /*  components: {global: true, dirs: ['~/components']}, */
 
     components: [{ path: '~/components', pathPrefix: false,},],
-
-    modules: [
-        '@nuxtjs/i18n',
-    ],
-
-/*     i18n: {
-        vueI18n: "~/plugins/i18n.config.ts",
-      }, */
-
-/*     i18n: {
-        strategy: 'no_prefix',
-        vueI18n: {
-            legacy: false,
-            locale: 'en',
-        },
-        locales: [
-            {
-                code: 'en',
-                iso: 'en-US',
-                name: 'English',
-                file: 'en-US.json',
-                dir: 'ltr',
-                icon: 'flag-en.svg'
-              },
-            {
-                code: 'ar',
-                iso: 'ar-AR',
-                name: 'AR',
-                file: 'ar-EG.json',
-                dir: 'rtl',
-                icon: 'flag-ar.svg'
-              },
-        ],
-        lazy: true,
-        langDir: 'locales',
-        defaultLocale: 'en',
-        detectBrowserLanguage: {
-            useCookie: true,
-            cookieKey: 'i18n_redirected',
-            alwaysRedirect: true
-          },
-    } */
 })

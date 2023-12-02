@@ -17,8 +17,6 @@
           <li class="nav-item">
             <NuxtLink to="/blank" class="nav-link">Blank</NuxtLink>
           </li>
-          <ThemeChanger />
-          <LangSwitcher />
 <!--           <LanguageSelector /> -->
 
         </ul>
@@ -28,7 +26,6 @@
 </template>
 
 <script setup>
-import { localePath } from 'vue-i18n-routing';
 
 </script>
 
