@@ -1,7 +1,9 @@
 body{
   font-family: 'Cairo', sans-serif;
 }
-
+.py-10{
+  padding: 100px 0;
+}
 
 [disabled],
 .disabled {
@@ -38,4 +40,29 @@ body{
   .content-space-b-lg-3 {
     padding-bottom: 7.5rem!important;
   }
+}
+
+
+
+.btn.btn-primary{
+  cursor: pointer;
+    position: relative;
+    display: block;
+    overflow: hidden;
+    z-index: 1;
+    padding: 15px 40px;
+    transition: all 0.5s ease-in-out;
+    border-width: 2px;
+    box-shadow: 6px 6px #000;
+    border: 2.5px solid #000;
+    border-color: #000 !important;
+    background-color: #ffe500;
+    color: #000;
+}
+
+.btn.btn-primary:hover {
+    transform: scale(0.95);
+    box-shadow: none;
+    transition: all 0.5s ease-in-out;
+    color: #fff;
 }

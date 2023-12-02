@@ -19,12 +19,11 @@ const imgAPI = {
     '5.jpg',
     '6.jpg',
   ],
-  blog: [
-    '1.png',
-    '2.png',
-    '3.png',
-
-  ],
+  RealTime:[
+    'crown.svg',
+    'tick-2.svg',
+    'video-camera.svg',
+  ]
 }
 
 export default imgAPI

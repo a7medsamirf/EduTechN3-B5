@@ -12,7 +12,7 @@ export default defineNuxtConfig({
             htmlAttrs: { dir: 'rtl', lang: 'ar' },
             charset: 'utf-16',
             viewport: 'width=500, initial-scale=1',
-            title: 'Nuxt 3 Starter Template',
+            title: 'EduTech',
             meta: [
                 // <meta name="description" content="My amazing site">
                 { charset: 'utf-8' },

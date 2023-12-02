@@ -20,12 +20,7 @@
           <ThemeChanger />
           <LangSwitcher />
 <!--           <LanguageSelector /> -->
-          <li class="nav-item">
-            <NuxtLink to="/auth/login" class="nav-link">Login</NuxtLink>
-          </li>
-          <li class="nav-item">
-            <NuxtLink to="/auth/register" class="nav-link">Register</NuxtLink>
-          </li>
+
         </ul>
       </div>
     </div>

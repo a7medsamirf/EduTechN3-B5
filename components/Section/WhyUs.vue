@@ -1,117 +1,96 @@
-<script>
-
-    export default {
-      name: "WhyUs",
-      data() {
-        return {
-
-          WhyUs: [{
-              title: '1:1 Personalized Classes',
-              description: 'We provide personalized 1:1 classes to help focus on your child’s strengths and minimize weakness.',
-              color: "#E2FFA4",
-            },
-            {
-              title: 'features.Branding',
-              description: 'features.description',
-              color: "#C2FCFC",
-            },
-            {
-              title: 'features.Programming',
-              description: 'features.description',
-              color: "#FBEDFF",
-            },
-            {
-              title: 'features.Marketing',
-              description: 'features.description',
-              color: "#E8EDFF",
-            },
-            {
-              title: 'features.Marketing',
-              description: 'features.description',
-              color: "#FFCDD9",
-            },
-          ]
-        }
+<script setup>
+  const WhyUs = ([{
+        title: 'فصول مخصصة',
+        description: 'نحن نقدم دروسا مخصصة 1:1 للمساعدة في التركيز على نقاط القوة لدى طفلك وتقليل الضعف.',
+        images: '/images/svg/WhyUs-3.svg',
+        Bgcolor: "#FFCDD9",
+        color: "#66172A",
       },
-    }
+      {
+        title: 'تقنية رواية القصص',
+        description: 'نحن نقدم دروسًا مبنية على سرد القصص تكون ممتعة وجذابة ومجزية. تغرس دروسنا حب التعلم مدى الحياة للمساعدة في النجاح الأكاديمي والشخصي والمهني.',
+        images: '/images/svg/WhyUs-4.svg',
+        Bgcolor: "#E8EDFF",
+        color: "#13235A",
+      },
+      {
+        title: 'التركيز على المهارات الحياتية مع مواضيع الحياة الحقيقية',
+        description: 'موضوعات من الحياة الواقعية تعزز معرفة الأطفال، وتهيئهم للمقابلات والحياة والوظائف.',
+        images: '/images/svg/WhyUs-5.svg',
+        Bgcolor: "#FBEDFF",
+        color: "#451651",
+      },
+      {
+        title: 'المساعدة في التطور بشكل كلي',
+        description: 'تعمل دروسنا على زيادة الأداء الأكاديمي وتزويد الطلاب بالمهارات الشاملة التي تؤهلهم للجامعة أو للمهن المستقبلية.',
+        images: '/images/svg/WhyUs-1.svg',
+        Bgcolor: "#C2FCFC",
+        color: "#225050",
+      },
+      {
+        title: 'استخدم التفكير النقدي والذكاء العاطفي',
+        description: 'يتم تشجيع المتعلمين على التفكير بوضوح وعقلانية، لفهم العلاقة المنطقية بين الأفكار وإصدار أحكام منطقية بشكل جيد.',
+        images: '/images/svg/WhyUs-2.svg',
+        Bgcolor: "#E2FFA4",
+        color: "#465528",
+      },
+    ]
+
+  );
 </script>
 
 <template>
-    <div class="my-3">
-      <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-      <h1 class="display-4 fw-normal text-body-emphasis">Why CuriousKids?</h1>
-      <p class="fs-5 text-body-secondary">Engaging, enjoyable, retention, motivation, creativity, positive, adaptive, participation, social skills.</p>
-      <button type="button" class="btn btn-primary">Primary</button>
+  <section id="WhyUs" class="py-10">
+    <div class="container">
+      <div class="my-3">
+        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+          <h1 class="display-4 fw-normal text-body-emphasis">لماذا إديوتك؟</h1>
+          <p class="fs-5 text-body-secondary">
+            المشاركة، المتعة، الاحتفاظ، التحفيز، الإبداع، الإيجابية، التكيف، المشاركة، المهارات الاجتماعية.
+          </p>
+        </div>
+
+        <div class="row">
+          <div class="col mt-3" v-for="(item, index) in WhyUs" :key="index">
+            <div class="card" :style="{ backgroundColor: item.Bgcolor }">
+           <img class="card-img-top w-25" :src="item.images" :alt="item.title">
+              <div class="card-body">
+                <h5 class="card-title">{{ item.title }}</h5>
+                <p class="card-text" :style="{ color: item.color }">{{ item.description }}</p>
+              </div>
+            </div>
+
+          </div>
+        </div>
+
+      </div>
     </div>
-   
-<div class="row">
-<div class="col col-md-4 mt-3" v-for="(item, index) in WhyUs" :key="index">
-<div class="card" :style="{ backgroundColor: item.color }">
-
-<!-- 
-    <img
-    src="require(`~/public/images/WhyUs/${item.avatar}`)"
-     class="card-img-top"  alt="item.avatar"> -->
-
-
-<div class="card-body">
-  <h5 class="card-title">{{ item.title }}</h5>
-  <p class="card-text">{{ item.description }}</p>
-</div>
-</div>
-
-</div>
- </div>
-
-    </div>
+  </section>
 </template>
 
-<style scoped>
+<style lang="scss" scoped>
+  #WhyUs {
+    .card {
+      cursor: pointer;
+      position: relative;
+      display: block;
+      overflow: hidden;
+      z-index: 1;
+      padding: 20px 5px;
+      transition: all 0.5s ease-in-out;
+      border-width: 2px;
+      box-shadow: 6px 6px #000;
+      border: 2.5px solid #000;
+      border-color: #000 !important;
+      border-radius: 16px !important;
 
-.card{
-  cursor: pointer;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    z-index: 1;
-    padding: 20px;
-    transition: all 0.5s ease-in-out;
-    border-width: 2px;
-    box-shadow: 6px 6px #000;
-    border: 2.5px solid #000;
-    border-color: #000 !important;
-    border-radius: 16px !important;
-
-}
-.card:hover{
-    transform: translateY(-10px);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-    color: #fff;
-}
+      &:hover {
+        transform: translateY(-10px);
+        box-shadow: none;
+        transition: all 0.5s ease-in-out;
+      }
 
 
-.btn.btn-primary{
-  cursor: pointer;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    z-index: 1;
-    padding: 15px 40px;
-    transition: all 0.5s ease-in-out;
-    border-width: 2px;
-    box-shadow: 6px 6px #000;
-    border: 2.5px solid #000;
-    border-color: #000 !important;
-    background-color: #ffe500;
-    color: #000;
-}
-
-.btn.btn-primary:hover {
-    transform: scale(0.95);
-    box-shadow: none;
-    transition: all 0.5s ease-in-out;
-    color: #fff;
-}
+    }
+  }
 </style>
-
