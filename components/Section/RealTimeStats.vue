@@ -1,71 +1,68 @@
 <script setup>
-const RealTime = ([
+const RealTime = [
   {
-    title: 'أفضل المدربين في العالم',
-    description: 'أكثر من 3500 دورة',
-    images: '/images/svg/home.svg',
-    color: '#495AFF',
+    title: "أفضل المدربين في العالم",
+    description: "أكثر من 3500 دورة",
+    images: "/images/svg/crown.svg",
+    color: "#495AFF",
   },
   {
-    title: 'دروس حية ودورات فيديو',
-    description: '4,12,000 دورة',
-    images: '/images/svg/video-camera.svg',
-    color: '#FF525C',
+    title: "دروس حية ودورات فيديو",
+    description: "4,12,000 دورة",
+    images: "/images/svg/video-camera.svg",
+    color: "#FF525C",
   },
   {
-    title: 'التعلم النشط للأطفال بشكل عام',
-    description: '2,16,000 طالب',
-    images: '/images/svg/tick-2.svg',
-    color: '#A535D9',
+    title: "التعلم النشط للأطفال بشكل عام",
+    description: "2,16,000 طالب",
+    images: "/images/svg/tick-2.svg",
+    color: "#A535D9",
   },
-]);
-
+];
 </script>
 
 <template>
-    <section id="RealTimeStats" class="">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-4" v-for="(item, index) in RealTime" :key="index">
-                    <div class="d-flex align-items-center">
-                        <div class="flex-shrink-0 icon rounded-circle d-flex justify-content-center" :style="{ backgroundColor: item.color }">
-                            <img :src="item.images" :alt="item.title">
-                        </div>
-                        <div class="flex-grow-1 me-3">
-                            <h5>{{ item.title }} </h5>
-                            <p>{{ item.description }}</p>
-                        </div>
-                    </div>
-                </div>
+  <section id="RealTimeStats" class="">
+    <div class="container">
+      <div class="row">
+        <div class="col-lg-4" v-for="(item, index) in RealTime" :key="index">
+          <div class="d-flex align-items-center">
+            <div
+              class="flex-shrink-0 icon rounded-circle d-flex justify-content-center"
+              :style="{ backgroundColor: item.color }"
+            >
+              <img :src="item.images" :alt="item.title" />
             </div>
-
+            <div class="flex-grow-1 me-3">
+              <h5>{{ item.title }}</h5>
+              <p>{{ item.description }}</p>
+            </div>
+          </div>
         </div>
-
-
-    </section>
-
+      </div>
+    </div>
+  </section>
 </template>
 
-
 <style lang="scss" scoped>
-    #RealTimeStats {
-        display: flex;
-        padding: 100px;
-        justify-content: center;
-        align-items: flex-start;
-        gap: 120px;
-        background: #F8F3C7;
-        .icon {
-            width: 75px;
-            height: 75px;
-            cursor: pointer;
-            position: relative;
-            overflow: hidden;
-            z-index: 1;
-            padding: 15px 30px;
-            border-width: 2px;
-            box-shadow: 0px 4px #000;
-            border: 2.5px solid #000;
+#RealTimeStats {
+  display: flex;
+  padding: 100px;
+  justify-content: center;
+  align-items: flex-start;
+  gap: 120px;
+  background: #f8f3c7;
+  .icon {
+    width: 75px;
+    height: 75px;
+    cursor: pointer;
+    position: relative;
+    overflow: hidden;
+    z-index: 1;
+    padding: 15px 30px;
+    border-width: 2px;
+    box-shadow: 0px 4px #000;
+    border: 2.5px solid #000;
+  }
 }
-    }
 </style>

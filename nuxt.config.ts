@@ -37,11 +37,6 @@ export default defineNuxtConfig({
     plugins: [
         {
             
-            src: 'plugins/scrolling.js',
-            mode: 'client'
-        },
-        {
-            
             src: 'plugins/bootstrap.js',
             mode: 'client'
         }
