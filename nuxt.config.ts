@@ -26,14 +26,20 @@ export default defineNuxtConfig({
               ],
         },
         
-    layoutTransition: { name: 'layout', mode: 'out-in' }
+        layoutTransition: { name: 'layout', mode: 'out-in' }
+
+    
 
     },
 
     css: ['~/assets/scss/style.scss', '~/assets/css/dashboard.css'],
 
     plugins: [
-
+        {
+            
+            src: 'plugins/scrolling.js',
+            mode: 'client'
+        },
         {
             
             src: 'plugins/bootstrap.js',

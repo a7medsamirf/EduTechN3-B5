@@ -25,18 +25,22 @@
 </template>
 
 <script>
-  export default {
+export default {
+  name: "Hero",
+  setup () {
     
-  }
-</script>
 
+    return {}
+  }
+}
+</script>
 
 <style lang="scss" scoped>
 #HeroSection{
   background: #E6FFE1;
   h1{
     color: #000;
-    font-size: 100px;
+    font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: 110px; /* 110% */
@@ -72,4 +76,6 @@ line-height: 32px;
 }
 }
 }
+
 </style>
+

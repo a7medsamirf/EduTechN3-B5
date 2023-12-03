@@ -51,10 +51,10 @@
         </div>
 
         <div class="row">
-          <div class="col-lg-6 mt-3" v-for="(item, index) in WhyUs" :key="index">
-            <div class="card" :style="{ backgroundColor: item.Bgcolor }">
+          <div class="col mt-3" v-for="(item, index) in WhyUs" :key="index">
+            <div class="card p-3" :style="{ backgroundColor: item.Bgcolor }">
            <img class="card-img-top w-25" :src="item.images" :alt="item.title">
-              <div class="card-body">
+              <div class="card-body p-0">
                 <h5 class="card-title">{{ item.title }}</h5>
                 <p class="card-text" :style="{ color: item.color }">{{ item.description }}</p>
               </div>
@@ -83,14 +83,21 @@
       border: 2.5px solid #000;
       border-color: #000 !important;
       border-radius: 16px !important;
-
       &:hover {
         transform: translateY(-10px);
         box-shadow: none;
         transition: all 0.5s ease-in-out;
       }
-
+    .card-body{
+      height: 200px;
+      font-weight: 500;
+      font-size: .875rem;
+      line-height: 27px;
+      white-space: break-spaces;
+    }
 
     }
   }
 </style>
+
+

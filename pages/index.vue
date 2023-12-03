@@ -1,6 +1,7 @@
 <template>
 <div>
-  <WhyUs />
+  <Hero />
+  <WhyUs /> 
 <RealTimeStats />
 </div>
 

@@ -3,7 +3,7 @@ const RealTime = ([
   {
     title: 'أفضل المدربين في العالم',
     description: 'أكثر من 3500 دورة',
-    images: '/images/svg/crown.svg',
+    images: '/images/svg/home.svg',
     color: '#495AFF',
   },
   {
