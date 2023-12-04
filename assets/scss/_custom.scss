@@ -4,23 +4,6 @@ body{
 .py-10{
   padding: 100px 0;
 }
-
-[disabled],
-.disabled {
-  cursor: not-allowed !important;
-}
-
-.avatar {
-  object-fit: cover;
-  object-position: center;
-}
-
-.content-space-3 {
-  padding-top: 5.5rem!important;
-  padding-bottom: 5.5rem!important;
-}
-
-
 ::-webkit-scrollbar {
   width: 10px;
 }
@@ -31,40 +14,34 @@ body{
   border-radius: 9999px;
 }
 
-@media (min-width: 992px){
-  .content-space-t-lg-4 {
-    padding-top: 10rem!important;
-  }
-}
-@media (min-width: 992px){
-  .content-space-b-lg-3 {
-    padding-bottom: 7.5rem!important;
-  }
-}
-
-
-
 .btn.btn-primary{
-  cursor: pointer;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    z-index: 1;
-    padding: 15px 40px;
     transition: all 0.5s ease-in-out;
-    border-width: 2px;
-    box-shadow: 6px 6px #000;
+    box-shadow: 3px 4px #000;
     border: 2.5px solid #000;
     border-color: #000 !important;
     background-color: #ffe500;
     color: #000;
+    font-size: 14px;
+    &:hover {
+      transform: scale(0.95);
+      box-shadow: none;
+      transition: all 0.5s ease-in-out;
+  }
 }
 
-.btn.btn-primary:hover {
+.btn-outline-light {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 3px 4px #000;
+  border: 2.5px solid #000;
+  border-color: #000 !important;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 14px;
+  &:hover {
     transform: scale(0.95);
     box-shadow: none;
     transition: all 0.5s ease-in-out;
-    color: #fff;
+  }
 }
 
 
@@ -72,3 +49,5 @@ body{
 .row {
   --bs-gutter-x: 1rem;
 }
+
+

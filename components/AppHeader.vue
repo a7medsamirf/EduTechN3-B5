@@ -1,17 +1,13 @@
 <template>
-  <!-- Top Header -->
-  <div class="top-header py-3">
-    <div class="container">
-      <h5>Web Zone</h5>
-    </div>
-  </div>
+  <TopHeader />
 
   <!-- Navbar  -->
   <nav class="navbar sticky-top navbar-expand-lg">
     <div class="container">
-      <NuxtLink to="/" class="navbar-brand m-0">
-        <img src="/images/logo/white.png" class="img-fluid w-50" />
+      <NuxtLink to="/" class="navbar-brand m-0 d-lg-none w-25">
+        <img src="/images/logo/white.png" class="img-fluid logo" />
       </NuxtLink>
+
       <button
         class="navbar-toggler"
         type="button"
@@ -21,24 +17,21 @@
         aria-expanded="false"
         aria-label="Toggle navigation"
       >
-        <span class="navbar-toggler-icon"></span>
+        <span class="bi bi-list-ul"></span>
       </button>
       <div class="collapse navbar-collapse" id="navbarScroll">
-        <ul
-          class="navbar-nav me-auto mb-2 mb-lg-0 navbar-nav-scroll"
-          style="--bs-scroll-height: 200px"
-        >
+        <ul class="navbar-nav p-0 navbar-nav-scroll" style="--bs-scroll-height: 200px">
           <li class="nav-item" v-for="(link, i) in links" :key="i">
             <NuxtLink class="nav-link" :to="link.to">
               {{ link.title }}
             </NuxtLink>
           </li>
-
-          <!--           <LanguageSelector /> -->
         </ul>
       </div>
     </div>
   </nav>
+
+  <!--   <MobileNav /> -->
 </template>
 
 <script>
@@ -62,11 +55,13 @@ export default {
   background: #e6ffe1;
   border-bottom: 1px solid #a3ce9b;
 }
-.navbar-brand svg {
-  color: rgba(59, 166, 118);
-}
 
-.top-header {
-  background: #b4d8ae;
+button.navbar-toggler {
+  box-shadow: 3px 4px #000;
+  border: 2.5px solid #000;
+  border-color: #000 !important;
+  background-color: #ffffff;
+  color: #000;
+  font-size: 25px;
 }
 </style>

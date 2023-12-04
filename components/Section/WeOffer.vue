@@ -48,14 +48,34 @@ const WhyUs = [
     <div class="container">
       <div class="my-3">
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h2 class="display-4 fw-normal text-body-emphasis">لماذا إديوتك؟</h2>
+          <h2 class="display-4 fw-normal text-body-emphasis">ما نقدمه</h2>
           <p class="fs-5 text-body-secondary">
-            المشاركة، المتعة، الاحتفاظ، التحفيز، الإبداع، الإيجابية، التكيف، المشاركة،
-            المهارات الاجتماعية.
+            فهم كيفية تقديم مفاهيم التعلم في سياقات واقعية
           </p>
         </div>
 
         <div class="row">
+          <div class="card mb-3" style="max-width: 540px">
+            <div class="row g-0">
+              <div class="col-md-4">
+                <img src="..." class="img-fluid rounded-start" alt="..." />
+              </div>
+              <div class="col-md-8">
+                <div class="card-body">
+                  <h5 class="card-title">Card title</h5>
+                  <p class="card-text">
+                    This is a wider card with supporting text below as a natural lead-in
+                    to additional content. This content is a little bit longer.
+                  </p>
+
+                  <p class="card-text">
+                    <small class="text-body-secondary">Last updated 3 mins ago</small>
+                  </p>
+                </div>
+              </div>
+            </div>
+          </div>
+
           <div class="col mt-3" v-for="(item, index) in WhyUs" :key="index">
             <div class="card p-3" :style="{ backgroundColor: item.Bgcolor }">
               <img class="card-img-top" :src="item.images" :alt="item.title" />

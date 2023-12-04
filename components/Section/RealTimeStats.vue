@@ -22,10 +22,14 @@ const RealTime = [
 </script>
 
 <template>
-  <section id="RealTimeStats" class="">
+  <section id="RealTimeStats" class="py-10">
     <div class="container">
       <div class="row">
-        <div class="col-lg-4" v-for="(item, index) in RealTime" :key="index">
+        <div
+          class="col-lg-4 col-md-6 py-3"
+          v-for="(item, index) in RealTime"
+          :key="index"
+        >
           <div class="d-flex align-items-center">
             <div
               class="flex-shrink-0 icon rounded-circle d-flex justify-content-center"
@@ -47,10 +51,8 @@ const RealTime = [
 <style lang="scss" scoped>
 #RealTimeStats {
   display: flex;
-  padding: 100px;
   justify-content: center;
   align-items: flex-start;
-  gap: 120px;
   background: #f8f3c7;
   .icon {
     width: 75px;

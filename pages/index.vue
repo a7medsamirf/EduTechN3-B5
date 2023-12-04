@@ -1,15 +1,12 @@
 <template>
-<div>
-  <Hero />
-  <WhyUs /> 
-<RealTimeStats />
-</div>
-
+  <div>
+    <Hero />
+    <WhyUs />
+    <RealTimeStats />
+    <WeOffer />
+  </div>
 </template>
 
-<script setup>
-</script>
+<script setup></script>
 
-<style lang="scss" scoped>
-
-</style>
+<style lang="scss" scoped></style>

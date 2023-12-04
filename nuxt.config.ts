@@ -22,7 +22,12 @@ export default defineNuxtConfig({
                   rel: 'stylesheet',
                   href: 'https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap',
                   crossorigin: ''
-                }
+                },
+                {
+                    rel: 'stylesheet',
+                    href: 'https://cdn.jsdelivr.net/npm/bootstrap-icons@1.11.2/font/bootstrap-icons.min.css',
+                    crossorigin: ''
+                  }
               ],
         },
         
