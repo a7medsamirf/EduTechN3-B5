@@ -37,7 +37,7 @@ export default defineNuxtConfig({
 
     },
 
-    css: ['~/assets/scss/style.scss', '~/assets/css/dashboard.css'],
+    css: ['~/assets/scss/style.scss'],
 
     plugins: [
         {

@@ -56,7 +56,11 @@ const WhyUs = [
         </div>
 
         <div class="row">
-          <div class="col mt-3" v-for="(item, index) in WhyUs" :key="index">
+          <div
+            class="col col-md-3 col-sm-6 mt-3"
+            v-for="(item, index) in WhyUs"
+            :key="index"
+          >
             <div class="card p-3" :style="{ backgroundColor: item.Bgcolor }">
               <img class="card-img-top" :src="item.images" :alt="item.title" />
               <div class="card-body p-0">
@@ -76,11 +80,6 @@ const WhyUs = [
 <style lang="scss" scoped>
 #WhyUs {
   .card {
-    cursor: pointer;
-    position: relative;
-    display: block;
-    overflow: hidden;
-    z-index: 1;
     padding: 20px 5px;
     transition: all 0.5s ease-in-out;
     border-width: 2px;

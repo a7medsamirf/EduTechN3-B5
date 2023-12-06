@@ -1,89 +1,84 @@
 <script setup>
-const WhyUs = [
+const WeOffer = [
   {
-    title: "فصول مخصصة",
-    description:
-      "نحن نقدم دروسا مخصصة 1:1 للمساعدة في التركيز على نقاط القوة لدى طفلك وتقليل الضعف.",
-    images: "/images/svg/WhyUs-3.svg",
+    title: "الأنجليزيه",
+    description: "يعزز خفة الحركة ويجعلها فعالة في حل المشكلات.",
+    images: "/images/svg/WeOffer-1.svg",
     Bgcolor: "#FFCDD9",
     color: "#66172A",
   },
   {
-    title: "تقنية رواية القصص",
-    description:
-      "نحن نقدم دروسًا مبنية على سرد القصص تكون ممتعة وجذابة ومجزية. تغرس دروسنا حب التعلم مدى الحياة للمساعدة في النجاح الأكاديمي والشخصي والمهني.",
-    images: "/images/svg/WhyUs-4.svg",
+    title: "كتابة إبداعية",
+    description: " عملية مصممة لتحفيز طفلك على إنشاء أعماله الخاصة",
+    images: "/images/svg/WeOffer-2.svg",
     Bgcolor: "#E8EDFF",
     color: "#13235A",
   },
   {
-    title: "التركيز على المهارات الحياتية مع مواضيع الحياة الحقيقية",
-    description:
-      "موضوعات من الحياة الواقعية تعزز معرفة الأطفال، وتهيئهم للمقابلات والحياة والوظائف.",
-    images: "/images/svg/WhyUs-5.svg",
+    title: "التحدث أمام الجمهور",
+    description: "تحديد نقاط القوة الفريدة لدى طفلك وتسخيرها.",
+    images: "/images/svg/WeOffer-3.svg",
     Bgcolor: "#FBEDFF",
     color: "#451651",
   },
   {
-    title: "المساعدة في التطور بشكل كلي",
-    description:
-      "تعمل دروسنا على زيادة الأداء الأكاديمي وتزويد الطلاب بالمهارات الشاملة التي تؤهلهم للجامعة أو للمهن المستقبلية.",
-    images: "/images/svg/WhyUs-1.svg",
+    title: "التدريب على الآداب",
+    description: "اترك انطباعًا أوليًا جيدًا في كل مكان وفي أي مكان",
+    images: "/images/svg/WeOffer-4.svg",
     Bgcolor: "#C2FCFC",
     color: "#225050",
-  },
-  {
-    title: "استخدم التفكير النقدي والذكاء العاطفي",
-    description:
-      "يتم تشجيع المتعلمين على التفكير بوضوح وعقلانية، لفهم العلاقة المنطقية بين الأفكار وإصدار أحكام منطقية بشكل جيد.",
-    images: "/images/svg/WhyUs-2.svg",
-    Bgcolor: "#E2FFA4",
-    color: "#465528",
   },
 ];
 </script>
 
 <template>
-  <section id="WhyUs" class="py-10">
+  <section id="WeOffer" class="py-10">
     <div class="container">
       <div class="my-3">
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h2 class="display-4 fw-normal text-body-emphasis">ما نقدمه</h2>
-          <p class="fs-5 text-body-secondary">
+          <h2 class="fs-2 header-title">ما نقدمه</h2>
+          <p class="fs-4 header-description">
             فهم كيفية تقديم مفاهيم التعلم في سياقات واقعية
+          </p>
+          <ul class="nav justify-content-center">
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#">Link</a>
+            </li>
+            <li class="nav-item Public-speaking">
+              <a class="nav-link" href="#">التحدث أمام الجمهور</a>
+            </li>
+          </ul>
+
+          <p class="header-Sabtitle">
+            ساعد الأطفال على تطوير المهارات الاجتماعية وتعلم كيفية العمل ضمن فريق لتحقيق
+            هدف مشترك
           </p>
         </div>
 
         <div class="row">
-          <div class="card mb-3" style="max-width: 540px">
-            <div class="row g-0">
-              <div class="col-md-4">
-                <img src="..." class="img-fluid rounded-start" alt="..." />
+          <div
+            class="col-lg-6 col-md-12 mt-3"
+            v-for="(item, index) in WeOffer"
+            :key="index"
+          >
+            <div class="d-flex WeOffer">
+              <div class="m-2 icon">
+                <img class="WeOffer-img-top" :src="item.images" :alt="item.title" />
               </div>
-              <div class="col-md-8">
-                <div class="card-body">
-                  <h5 class="card-title">Card title</h5>
-                  <p class="card-text">
-                    This is a wider card with supporting text below as a natural lead-in
-                    to additional content. This content is a little bit longer.
-                  </p>
-
-                  <p class="card-text">
-                    <small class="text-body-secondary">Last updated 3 mins ago</small>
-                  </p>
-                </div>
+              <div class="flex-grow-1 me-3 mt-3 WeOffer-body rounded">
+                <h5 class="card-title mb-3">{{ item.title }}</h5>
+                <p class="card-text">{{ item.description }}</p>
+                <button type="button" class="btn btn-light btn-lg d-lg-none">
+                  مشاهدة المزيد
+                </button>
               </div>
-            </div>
-          </div>
-
-          <div class="col mt-3" v-for="(item, index) in WhyUs" :key="index">
-            <div class="card p-3" :style="{ backgroundColor: item.Bgcolor }">
-              <img class="card-img-top" :src="item.images" :alt="item.title" />
-              <div class="card-body p-0">
-                <h5 class="card-title">{{ item.title }}</h5>
-                <p class="card-text" :style="{ color: item.color }">
-                  {{ item.description }}
-                </p>
+              <div class="m-2 icon d-flex align-items-center">
+                <button type="button" class="btn btn-light btn-lg d-none d-lg-block">
+                  مشاهدة المزيد
+                </button>
               </div>
             </div>
           </div>
@@ -94,8 +89,8 @@ const WhyUs = [
 </template>
 
 <style lang="scss" scoped>
-#WhyUs {
-  .card {
+#WeOffer {
+  .WeOffer {
     cursor: pointer;
     position: relative;
     display: block;
@@ -104,25 +99,73 @@ const WhyUs = [
     padding: 20px 5px;
     transition: all 0.5s ease-in-out;
     border-width: 2px;
-    box-shadow: 6px 6px #000;
+    box-shadow: 5px 5px #ffcdd9, 5px 5px 0px 2.5px #000;
     border: 2.5px solid #000;
-    border-color: #000 !important;
     border-radius: 16px !important;
     &:hover {
       transform: translateY(-10px);
       box-shadow: none;
       transition: all 0.5s ease-in-out;
     }
-    .card-img-top {
-      width: 80px;
+    .WeOffer-img-top {
+      width: 60px;
+      height: 80px;
     }
-    .card-body {
-      height: 250px;
+    .WeOffer-body {
       font-weight: 500;
       font-size: 0.875rem;
       line-height: 27px;
       white-space: break-spaces;
     }
   }
+}
+
+button.btn.btn-light {
+  transition: all 0.5s ease-in-out;
+  box-shadow: 3px 4px #000;
+  border: 2.5px solid #000;
+  border-color: #000 !important;
+  background-color: #fffacd;
+  color: #000;
+  font-size: 14px;
+}
+
+.Public-speaking {
+  transition: all 0.5s ease-in-out;
+  border-width: 2px;
+  box-shadow: 3px 3px #ffc46c, 3px 3px 0px 2.5px #000;
+  border: 2.5px solid #000;
+  border-color: #000 !important;
+  border-radius: 16px !important;
+  background: #70fff6;
+  a {
+    color: #000000;
+  }
+}
+
+.header-title {
+  color: #000;
+  text-align: center;
+  font-size: 45px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110px;
+}
+
+.header-description {
+  color: #797979;
+  text-align: center;
+  font-size: 24px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110px;
+}
+
+.header-Sabtitle {
+  color: #000;
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: 110px;
 }
 </style>

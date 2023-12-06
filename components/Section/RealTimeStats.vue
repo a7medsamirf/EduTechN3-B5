@@ -35,9 +35,9 @@ const RealTime = [
               class="flex-shrink-0 icon rounded-circle d-flex justify-content-center"
               :style="{ backgroundColor: item.color }"
             >
-              <img :src="item.images" :alt="item.title" />
+              <img class="align-self-center mr-3" :src="item.images" :alt="item.title" />
             </div>
-            <div class="flex-grow-1 me-3">
+            <div class="flex-grow-1 me-3 mt-3">
               <h5>{{ item.title }}</h5>
               <p>{{ item.description }}</p>
             </div>
