@@ -4,6 +4,7 @@
     <WhyUs />
     <RealTimeStats />
     <WeOffer />
+    <blogs />
   </div>
 </template>
 

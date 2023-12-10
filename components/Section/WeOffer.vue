@@ -4,29 +4,21 @@ const WeOffer = [
     title: "الأنجليزيه",
     description: "يعزز خفة الحركة ويجعلها فعالة في حل المشكلات.",
     images: "/images/svg/WeOffer-1.svg",
-    Bgcolor: "#FFCDD9",
-    color: "#66172A",
   },
   {
     title: "كتابة إبداعية",
     description: " عملية مصممة لتحفيز طفلك على إنشاء أعماله الخاصة",
     images: "/images/svg/WeOffer-2.svg",
-    Bgcolor: "#E8EDFF",
-    color: "#13235A",
   },
   {
     title: "التحدث أمام الجمهور",
     description: "تحديد نقاط القوة الفريدة لدى طفلك وتسخيرها.",
     images: "/images/svg/WeOffer-3.svg",
-    Bgcolor: "#FBEDFF",
-    color: "#451651",
   },
   {
     title: "التدريب على الآداب",
     description: "اترك انطباعًا أوليًا جيدًا في كل مكان وفي أي مكان",
     images: "/images/svg/WeOffer-4.svg",
-    Bgcolor: "#C2FCFC",
-    color: "#225050",
   },
 ];
 </script>
@@ -58,18 +50,14 @@ const WeOffer = [
           </p>
         </div>
 
-        <div class="row">
-          <div
-            class="col-lg-6 col-md-12 mt-3"
-            v-for="(item, index) in WeOffer"
-            :key="index"
-          >
+        <div class="row g-4">
+          <div class="col-lg-6 col-md-12" v-for="(item, index) in WeOffer" :key="index">
             <div class="d-flex WeOffer">
               <div class="m-2 icon">
                 <img class="WeOffer-img-top" :src="item.images" :alt="item.title" />
               </div>
               <div class="flex-grow-1 me-3 mt-3 WeOffer-body rounded">
-                <h5 class="card-title mb-3">{{ item.title }}</h5>
+                <h5 class="card-title font-light mb-3">{{ item.title }}</h5>
                 <p class="card-text">{{ item.description }}</p>
                 <button type="button" class="btn btn-light btn-lg d-lg-none">
                   مشاهدة المزيد
@@ -93,9 +81,6 @@ const WeOffer = [
   .WeOffer {
     cursor: pointer;
     position: relative;
-    display: block;
-    overflow: hidden;
-    z-index: 1;
     padding: 20px 5px;
     transition: all 0.5s ease-in-out;
     border-width: 2px;
@@ -149,7 +134,6 @@ button.btn.btn-light {
   font-size: 45px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110px;
 }
 
 .header-description {
@@ -158,7 +142,6 @@ button.btn.btn-light {
   font-size: 24px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110px;
 }
 
 .header-Sabtitle {
@@ -166,6 +149,5 @@ button.btn.btn-light {
   font-size: 20px;
   font-style: normal;
   font-weight: 400;
-  line-height: 110px;
 }
 </style>
