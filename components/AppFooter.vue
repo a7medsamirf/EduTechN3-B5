@@ -2,8 +2,8 @@
   <div>
     <footer class="py-5" id="footer">
       <div class="container">
-        <div class="row">
-          <div class="col-md-4 mb-3">
+        <div class="row row-cols-1 row-cols-lg-5 g-4">
+          <div class="col-lg-3 mb-3">
             <form>
               <h5 class="Newsletter">اشترك في نشرتنا الإخبارية</h5>
               <p>Monthly digest of what's new and exciting from us.</p>
@@ -19,48 +19,24 @@
               </div>
             </form>
           </div>
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
+          <div class="col-lg-2 mb-3">
+            <h5>القائمة</h5>
             <ul class="nav flex-column p-0">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                <a href="" class="nav-link p-0 text-body-secondary">التصنيفات</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">الدورات</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">الأخبار</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">الشهادات</a>
               </li>
             </ul>
           </div>
-          <div class="col-6 col-md-2 mb-3">
-            <h5>Section</h5>
-            <ul class="nav flex-column p-0">
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
-              </li>
-            </ul>
-          </div>
-
-          <div class="col-6 col-md-2 mb-3">
+          <div class="col-lg-2 mb-3">
             <h5>Section</h5>
             <ul class="nav flex-column p-0">
               <li class="nav-item mb-2">
@@ -81,7 +57,28 @@
             </ul>
           </div>
 
-          <div class="col-md-4 mb-3">
+          <div class="col-lg-2 mb-3">
+            <h5>Section</h5>
+            <ul class="nav flex-column p-0">
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
+              </li>
+              <li class="nav-item mb-2">
+                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+              </li>
+            </ul>
+          </div>
+
+          <div class="col-lg-3 mb-3">
             <form>
               <h5 class="Newsletter">اشترك في نشرتنا الإخبارية</h5>
               <p>Monthly digest of what's new and exciting from us.</p>

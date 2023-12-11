@@ -66,8 +66,15 @@ const blogs = [
   }
   .card {
     position: relative;
-    border: 3px solid #000;
+    border: 3px solid var(--p-darkcolor);
     background: #fff;
+    transition: all 0.3s ease-in-out;
+    cursor: pointer;
+    &:hover {
+      box-shadow: 5px 5px 0px 0px var(--p-darkcolor);
+      transform: translateX(-5px) translateY(-5px);
+      transition: all 0.3s ease-in-out;
+    }
     .card-title {
       white-space: nowrap;
       overflow: hidden;
@@ -83,7 +90,7 @@ const blogs = [
       right: 20px;
     }
     img.card-img-top {
-      border: 3px solid #000;
+      border: 3px solid var(--p-darkcolor);
     }
   }
 }

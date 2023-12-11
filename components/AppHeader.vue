@@ -43,7 +43,7 @@ export default {
         { title: "الرئيسية", to: "/" },
         { title: "Getting Started", to: "/getting-started" },
         { title: "Blank", to: "/blank" },
-        { title: "Home", to: "/" },
+        { title: "Test", to: "/test" },
       ],
     };
   },

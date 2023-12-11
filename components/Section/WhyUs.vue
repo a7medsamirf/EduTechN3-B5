@@ -55,15 +55,11 @@ const WhyUs = [
           </p>
         </div>
 
-        <div class="row">
-          <div
-            class="col col-md-3 col-sm-6 mt-3"
-            v-for="(item, index) in WhyUs"
-            :key="index"
-          >
-            <div class="card p-3" :style="{ backgroundColor: item.Bgcolor }">
+        <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 g-4">
+          <div class="col" v-for="(item, index) in WhyUs" :key="index">
+            <div class="card h-100 p-3" :style="{ backgroundColor: item.Bgcolor }">
               <img class="card-img-top" :src="item.images" :alt="item.title" />
-              <div class="card-body p-0">
+              <div class="card-body mb-md-5 p-0">
                 <h5 class="card-title">{{ item.title }}</h5>
                 <p class="card-text" :style="{ color: item.color }">
                   {{ item.description }}
@@ -83,10 +79,11 @@ const WhyUs = [
     padding: 20px 5px;
     transition: all 0.5s ease-in-out;
     border-width: 2px;
-    box-shadow: 6px 6px #000;
-    border: 2.5px solid #000;
-    border-color: #000 !important;
-    border-radius: 16px !important;
+    box-shadow: 6px 6px 0px 0px var(--p-darkcolor);
+    border: 2.5px solid var(--p-darkcolor);
+    border-color: var(--p-darkcolor);
+    border-radius: 16px;
+    cursor: pointer;
     &:hover {
       transform: translateY(-10px);
       box-shadow: none;
@@ -96,7 +93,6 @@ const WhyUs = [
       width: 80px;
     }
     .card-body {
-      height: 250px;
       font-weight: 500;
       font-size: 0.875rem;
       line-height: 27px;
