@@ -6,11 +6,9 @@ Look at the [Nuxt 3 documentation](https://nuxt.com/docs/getting-started/introdu
 
 This boilerplate uses the following tools::
 ## Feature
-- ✅ Bootstrap 5 Admin Panel 
+- ✅ Bootstrap 5
 - ✅ Dark Mode
 - ✅ Vue I18n Multi Language
-- ✅ Login
-- ✅ Registration
 
 ## How To Use
 #### Clone the repository
