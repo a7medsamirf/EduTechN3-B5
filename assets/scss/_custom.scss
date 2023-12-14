@@ -1,3 +1,29 @@
+/*
+Template Name: Microfilm
+Description: Microfilm | Vue Template
+Version: 1.0
+Author: Ahmed Samir
+        linkedin    URI: https://www.linkedin.com/in/a7med-samir-f/
+        Github      URI: https://github.com/a7medsamirf
+        Facebook    URI: https://www.facebook.com/a7med.samir.93/
+        Twitter     URI: https://twitter.com/a7medsamirf
+Tags: vue, Nuxt, Vuetify, Content, APi, one page, responsive, Axios
+Main Css Rules  for Main Elements in The project
+/*
+Style Index
+==================================================
+    1. Basic Setup
+    2. Theme color
+    3. Navigation Drawer
+       - Menu Animation
+*/
+
+// =======================================
+// [ 1. Basic Setup  ]
+// =======================================
+
+/*---------- [1. Basic Setup ] ---------- */
+
 body{
 /*   font-family: 'Cairo', sans-serif; */
   font-family: 'Almarai', sans-serif;
@@ -50,5 +76,6 @@ body{
 .row {
   --bs-gutter-x: 1rem;
 }
+
 
 

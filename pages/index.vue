@@ -1,6 +1,7 @@
 <template>
   <div>
     <Hero />
+    <Partners />
     <WhyUs />
     <RealTimeStats />
     <WeOffer />

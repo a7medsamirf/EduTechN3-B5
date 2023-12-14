@@ -8,8 +8,22 @@
 @import "bootstrap/scss/bootstrap";
 // @import "bootstrap-icons/font/bootstrap-icons.css";
 // components
-@import 'animations/transitions';
+
+/*
+** Custom mixins
+*/
+
+/*
+** transition scss
+*/
+@import 'transitions';
+
+@import 'mixins';
 
 @import "root";
+/*
+** Custom variable
+*/
 @import "variables";
+
 @import "custom";

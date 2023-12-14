@@ -19,6 +19,7 @@
       >
         <span class="bi bi-list-ul"></span>
       </button>
+
       <div class="collapse navbar-collapse" id="navbarScroll">
         <ul class="navbar-nav p-0 navbar-nav-scroll" style="--bs-scroll-height: 200px">
           <li class="nav-item" v-for="(link, i) in links" :key="i">
