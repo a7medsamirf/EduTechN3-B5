@@ -45,6 +45,7 @@ export default {
         { title: "Getting Started", to: "/getting-started" },
         { title: "Blank", to: "/blank" },
         { title: "Test", to: "/test" },
+        { title: "المقالات", to: "/blogs" },
       ],
     };
   },

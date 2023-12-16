@@ -1,6 +1,6 @@
 <template>
   <div>
-    <footer class="py-5" id="footer">
+    <footer class="py-10" id="footer">
       <div class="container">
         <div class="row row-cols-1 row-cols-lg-5 g-4">
           <div class="col-lg-3 mb-3">
@@ -29,7 +29,7 @@
                 <a href="#" class="nav-link p-0 text-body-secondary">الدورات</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">الأخبار</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">جديد</a>
               </li>
               <li class="nav-item mb-2">
                 <a href="#" class="nav-link p-0 text-body-secondary">الشهادات</a>
@@ -37,43 +37,37 @@
             </ul>
           </div>
           <div class="col-lg-2 mb-3">
-            <h5>Section</h5>
+            <h5>الشركة</h5>
             <ul class="nav flex-column p-0">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">معلومات عنا</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">أخبار</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">الموجهون</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">مدونة</a>
               </li>
             </ul>
           </div>
 
           <div class="col-lg-2 mb-3">
-            <h5>Section</h5>
+            <h5>الدعم</h5>
             <ul class="nav flex-column p-0">
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Home</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">حماية</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Features</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">الشروط والأحكام</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">Pricing</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">وظائف</a>
               </li>
               <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">FAQs</a>
-              </li>
-              <li class="nav-item mb-2">
-                <a href="#" class="nav-link p-0 text-body-secondary">About</a>
+                <a href="#" class="nav-link p-0 text-body-secondary">مجتمع</a>
               </li>
             </ul>
           </div>
