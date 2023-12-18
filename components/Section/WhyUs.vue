@@ -47,8 +47,8 @@ const WhyUs = [
   <section id="WhyUs" class="py-10">
     <div class="container">
       <div class="my-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h2 class="display-4 fw-normal text-body-emphasis">لماذا إديوتك؟</h2>
+        <div class="section-header p-3 pb-md-4 text-center">
+          <h2 class="fs-1 header-title">لماذا إديوتك؟</h2>
           <p class="fs-5 text-body-secondary">
             المشاركة، المتعة، الاحتفاظ، التحفيز، الإبداع، الإيجابية، التكيف، المشاركة،
             المهارات الاجتماعية.

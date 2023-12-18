@@ -18,7 +18,7 @@
               <!-- {{  $t('welcome') }} -->
               كل طفل يولد عبقريا
             </h1>
-            <p class="lead">
+            <p class="lead fs-5 text-body-secondary">
               نحن نقدم دروسًا مخصصة مدعومة بالذكاء الاصطناعي تستهدف الأطفال بين 3-12 سنة.
               مع مناهجنا المتقاطعة النهج، ونحن نضمن حصول طفلك على الأفضل.
             </p>
@@ -47,19 +47,10 @@ export default {
 #HeroSection {
   background: #e6ffe1;
   h1 {
-    color: #000;
     font-size: 60px;
     font-style: normal;
     font-weight: 400;
     line-height: 110px; /* 110% */
-  }
-  p {
-    color: #000;
-
-    font-size: 18px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: 32px;
   }
 }
 </style>

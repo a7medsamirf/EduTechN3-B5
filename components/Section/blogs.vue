@@ -32,7 +32,7 @@ const blogs = [
     <div class="container">
       <div class="my-3">
         <div class="section-head p-3 pb-md-4 text-center">
-          <h2 class="fs-2 header-title">إقرأ مدوناتنا اليومية</h2>
+          <h2 class="fs-1 header-title">إقرأ مدوناتنا اليومية</h2>
         </div>
 
         <div class="row row-cols-1 row-cols-lg-3 g-4">
@@ -43,7 +43,7 @@ const blogs = [
                 item.category
               }}</span>
               <div class="card-body p-4">
-                <h5 class="card-title fw-bold mb-3">{{ item.title }}</h5>
+                <h5 class="card-title mb-3">{{ item.title }}</h5>
                 <p class="card-text">{{ item.description }}</p>
                 <div class="d-flex justify-content-between align-items-center">
                   <small class="text-body-secondary">تم النشر في 8 نوفمبر 2023</small>

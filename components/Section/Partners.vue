@@ -26,7 +26,7 @@ const Partners = [
     <div class="container">
       <div class="my-3">
         <div class="section-head p-3 pb-md-4 text-center">
-          <h2 class="fs-2 header-title">بعض شركائنا</h2>
+          <h2 class="fs-1 header-title">بعض شركائنا</h2>
         </div>
 
         <div class="row row-cols-1 row-cols-lg-6 row-cols-md-3 g-4">

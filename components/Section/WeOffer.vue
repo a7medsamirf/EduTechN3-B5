@@ -28,7 +28,7 @@ const WeOffer = [
     <div class="container">
       <div class="my-3">
         <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
-          <h2 class="fs-2 header-title">ما نقدمه</h2>
+          <h2 class="fs-1 header-title">ما نقدمه</h2>
           <p class="fs-4 header-description">
             فهم كيفية تقديم مفاهيم التعلم في سياقات واقعية
           </p>

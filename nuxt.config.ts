@@ -40,11 +40,7 @@ export default defineNuxtConfig({
     css: ['~/assets/scss/style.scss'],
 
     plugins: [
-        {
-            
-            src: 'plugins/bootstrap.js',
-            mode: 'client'
-        }
+        { src: 'plugins/bootstrap.js', mode: 'client'}
     ],
    /*  components: {global: true, dirs: ['~/components']}, */
 
