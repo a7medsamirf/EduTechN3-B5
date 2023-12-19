@@ -1,6 +1,6 @@
 <template>
   <div>
-    <nav class="navbar fixed-bottom rounded-pill d-lg-none">
+    <nav class="navbar fixed-bottom rounded-3 d-lg-none">
       <div class="container-fluid">
         <div class="navbar-collapse">
           <ul class="navbar-nav d-inline-block">

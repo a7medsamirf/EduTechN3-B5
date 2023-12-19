@@ -10,11 +10,11 @@
         </div>
 
         <div class="col-md-4">
-          <div class="search-box rounded-pill d-flex align-items-center">
+          <div class="search-box rounded-3 d-flex align-items-center">
             <i class="bi bi-search"></i>
             <input
               type="text"
-              class="form-control rounded-pill"
+              class="form-control rounded-3"
               placeholder="بحث في أي دورة"
             />
           </div>
@@ -22,10 +22,10 @@
 
         <div class="col d-flex flex-row-reverse align-items-center">
           <div class="">
-            <button type="button" class="btn btn-outline-light rounded-pill btn-lg mx-2">
+            <button type="button" class="btn btn-outline-light rounded-3 btn-lg mx-2">
               انضم كمدرس
             </button>
-            <button type="button" class="btn btn-primary rounded-pill btn-lg mx-2">
+            <button type="button" class="btn btn-primary rounded-3 btn-lg mx-2">
               احجز فصلًا مجانيًا
             </button>
           </div>

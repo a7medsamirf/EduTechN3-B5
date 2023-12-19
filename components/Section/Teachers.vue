@@ -9,21 +9,21 @@ const Teachers = [
   },
   {
     title: "تعلم لغة الماندرين",
-    name: "Diego",
+    name: "Ming Yue",
     images: "/images/Learn/3.png",
     Bgcolor: "#7AC7FF",
     color: "#13235A",
   },
   {
     title: "تعلم الانجليزية",
-    name: "Diego",
+    name: "Aarav",
     images: "/images/Learn/2.png",
     Bgcolor: "#e2ffa4",
     color: "#451651",
   },
   {
     title: "تعلم الفرنسية",
-    name: "Diego",
+    name: "Mandy",
     images: "/images/Learn/4.png",
     Bgcolor: "#75FFE6",
     color: "#225050",
@@ -44,14 +44,14 @@ const Teachers = [
 
         <div class="row row-cols-1 row-cols-lg-4 g-4">
           <div class="col" v-for="(item, index) in Teachers" :key="index">
-            <div class="card rounded-5">
-              <div class="img-box rounded-5" :style="{ backgroundColor: item.Bgcolor }">
+            <div class="card rounded-3">
+              <div class="img-box rounded-3" :style="{ backgroundColor: item.Bgcolor }">
                 <img
-                  class="card-img-top rounded-5"
+                  class="card-img-top rounded-3"
                   :src="item.images"
                   :alt="item.title"
                 />
-                <span class="name" :style="{ backgroundColor: item.Bgcolor }">{{
+                <span class="name font-bold" :style="{ backgroundColor: item.Bgcolor }">{{
                   item.name
                 }}</span>
               </div>
@@ -62,7 +62,11 @@ const Teachers = [
                     <h5 class="card-title mb-2">{{ item.title }}</h5>
                     <p class="card-text">اضغط لتتعلم المزيد</p>
                   </small>
-                  <button type="button" arget="_blank" class="btn btn-light btn-md">
+                  <button
+                    type="button"
+                    arget="_blank"
+                    class="btn btn-light btn-md rounded-3"
+                  >
                     استكشاف
                   </button>
                 </div>
@@ -82,7 +86,6 @@ const Teachers = [
     border-width: 2px;
     border: 2.5px solid var(--p-darkcolor);
     border-color: var(--p-darkcolor);
-    border-radius: 16px;
     cursor: pointer;
     .card-img-top {
       width: 150px;
@@ -98,11 +101,11 @@ const Teachers = [
 
 button.btn.btn-light {
   transition: all 0.5s ease-in-out;
-  box-shadow: 3px 4px #000;
-  border: 2.5px solid #000;
-  border-color: #000 !important;
+  box-shadow: 3px 4px var(--p-darkcolor);
+  border: 2.5px solid var(--p-darkcolor);
+  border-color: var(--p-darkcolor);
   background-color: #fffacd;
-  color: #000;
+  color: var(--p-darkcolor);
   font-size: 14px;
 }
 

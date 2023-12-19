@@ -27,11 +27,12 @@ const WeOffer = [
   <section id="WeOffer" class="py-10">
     <div class="container">
       <div class="my-3">
-        <div class="pricing-header p-3 pb-md-4 mx-auto text-center">
+        <div class="section-header p-3 pb-md-4 text-center">
           <h2 class="fs-1 header-title">ما نقدمه</h2>
-          <p class="fs-4 header-description">
+          <p class="fs-5 text-body-secondary">
             فهم كيفية تقديم مفاهيم التعلم في سياقات واقعية
           </p>
+
           <ul class="nav justify-content-center">
             <li class="nav-item">
               <a class="nav-link" href="#">Link</a>
@@ -44,7 +45,7 @@ const WeOffer = [
             </li>
           </ul>
 
-          <p class="header-Sabtitle">
+          <p class="fs-5 text-body-secondary">
             ساعد الأطفال على تطوير المهارات الاجتماعية وتعلم كيفية العمل ضمن فريق لتحقيق
             هدف مشترك
           </p>
@@ -52,19 +53,22 @@ const WeOffer = [
 
         <div class="row g-4">
           <div class="col-lg-6 col-md-12" v-for="(item, index) in WeOffer" :key="index">
-            <div class="d-flex WeOffer">
+            <div class="d-flex WeOffer rounded-3">
               <div class="m-2 icon">
                 <img class="WeOffer-img-top" :src="item.images" :alt="item.title" />
               </div>
               <div class="flex-grow-1 me-3 mt-3 WeOffer-body rounded">
                 <h5 class="card-title font-light mb-3">{{ item.title }}</h5>
                 <p class="card-text">{{ item.description }}</p>
-                <button type="button" class="btn btn-light btn-lg d-lg-none">
+                <button type="button" class="btn btn-light btn-lg d-lg-none rounded-3">
                   مشاهدة المزيد
                 </button>
               </div>
               <div class="m-2 icon d-flex align-items-center">
-                <button type="button" class="btn btn-light btn-lg d-none d-lg-block">
+                <button
+                  type="button"
+                  class="btn btn-light btn-lg d-none d-lg-block rounded-3"
+                >
                   مشاهدة المزيد
                 </button>
               </div>
@@ -86,7 +90,6 @@ const WeOffer = [
     border-width: 2px;
     box-shadow: 5px 5px #ffcdd9, 5px 5px 0px 2.5px #000;
     border: 2.5px solid #000;
-    border-radius: 16px !important;
     &:hover {
       transform: translateY(-10px);
       box-shadow: none;
@@ -121,7 +124,6 @@ button.btn.btn-light {
   box-shadow: 3px 3px #ffc46c, 3px 3px 0px 2.5px #000;
   border: 2.5px solid #000;
   border-color: #000 !important;
-  border-radius: 16px !important;
   background: #70fff6;
   a {
     color: #000000;

@@ -57,7 +57,10 @@ const WhyUs = [
 
         <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 g-4">
           <div class="col" v-for="(item, index) in WhyUs" :key="index">
-            <div class="card h-100 p-3" :style="{ backgroundColor: item.Bgcolor }">
+            <div
+              class="card rounded-3 h-100 p-3"
+              :style="{ backgroundColor: item.Bgcolor }"
+            >
               <img class="card-img-top" :src="item.images" :alt="item.title" />
               <div class="card-body mb-md-5 p-0">
                 <h5 class="card-title">{{ item.title }}</h5>
@@ -82,7 +85,6 @@ const WhyUs = [
     box-shadow: 6px 6px 0px 0px var(--p-darkcolor);
     border: 2.5px solid var(--p-darkcolor);
     border-color: var(--p-darkcolor);
-    border-radius: 16px;
     cursor: pointer;
     &:hover {
       transform: translateY(-10px);
