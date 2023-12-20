@@ -1,15 +1,17 @@
 <template>
   <div>
-    <h1>test</h1>
+    <h1 class="title">Nuxt Anime</h1>
   </div>
 </template>
 
-<script>
-export default {
-  setup() {
-    return {};
-  },
-};
+<script setup>
+const { $anime } = useNuxtApp();
+onMounted(() => {
+  $anime({
+    targets: ".title",
+    translateY: 50,
+    loop: true,
+    duration: 1200,
+  });
+});
 </script>
-
-<style lang="scss" scoped></style>

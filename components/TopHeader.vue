@@ -10,11 +10,11 @@
         </div>
 
         <div class="col-md-4">
-          <div class="search-box rounded-3 d-flex align-items-center">
+          <div class="search-box rounded-4 d-flex align-items-center">
             <i class="bi bi-search"></i>
             <input
               type="text"
-              class="form-control rounded-3"
+              class="form-control rounded-4"
               placeholder="بحث في أي دورة"
             />
           </div>
@@ -22,10 +22,10 @@
 
         <div class="col d-flex flex-row-reverse align-items-center">
           <div class="">
-            <button type="button" class="btn btn-outline-light rounded-3 btn-lg mx-2">
+            <button type="button" class="btn btn-outline-light rounded-4 btn-lg mx-2">
               انضم كمدرس
             </button>
-            <button type="button" class="btn btn-primary rounded-3 btn-lg mx-2">
+            <button type="button" class="btn btn-primary rounded-4 btn-lg mx-2">
               احجز فصلًا مجانيًا
             </button>
           </div>
@@ -52,7 +52,7 @@ export default {
   .search-box {
     position: relative;
     transition: all 0.5s ease-in-out;
-    box-shadow: 3px 4px #000;
+    box-shadow: 3px 4px var(--p-darkcolor);
     border: 2.5px solid #000;
     border-color: #000 !important;
     background-color: #ffffff;

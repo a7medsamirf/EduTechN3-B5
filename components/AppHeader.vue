@@ -20,7 +20,7 @@
       </button>
 
       <div
-        class="offcanvas offcanvas-end w-100"
+        class="offcanvas offcanvas-end w-75"
         tabindex="-1"
         id="offcanvasDarkNavbar"
         aria-labelledby="offcanvasDarkNavbarLabel"
@@ -44,7 +44,7 @@
         </div>
         <div class="offcanvas-body">
           <ul class="navbar-nav pe-3">
-            <li class="nav-item dropdown" v-for="(link, i) in links" :key="i">
+            <li class="nav-item dropdown px-2" v-for="(link, i) in links" :key="i">
               <NuxtLink class="nav-link" v-if="!link.sublinks" :to="link.to">
                 {{ link.title }}
               </NuxtLink>
@@ -60,7 +60,7 @@
               </a>
               <ul class="dropdown-menu">
                 <li v-for="sublink in link.sublinks" :to="sublink.to">
-                  <NuxtLink class="dropdown-item" :to="link.to">{{
+                  <NuxtLink class="dropdown-item" :to="sublink.to">{{
                     sublink.title
                   }}</NuxtLink>
                 </li>
@@ -82,6 +82,8 @@ export default {
     return {
       links: [
         { title: "الرئيسية", to: "/" },
+        { title: "التصنيفات", to: "" },
+        { title: "من نحن", to: "#WhyUs" },
         {
           title: "Pages",
           sublinks: [
@@ -93,15 +95,7 @@ export default {
 
         { title: "Blank", to: "/blank" },
         { title: "Test", to: "/test" },
-        { title: "المقالات", to: "/blogs" },
-        {
-          title: "Pages",
-          sublinks: [
-            { title: "gallery", to: "/gallery" },
-            { title: "faq", to: "/faq" },
-            { title: "TestPage", to: "/TestPage" },
-          ],
-        },
+        { title: "المقالات", to: "#blogs" },
       ],
     };
   },
@@ -115,9 +109,9 @@ export default {
 }
 
 button.navbar-toggler {
-  box-shadow: 3px 4px #000;
-  border: 2.5px solid #000;
-  border-color: #000 !important;
+  box-shadow: 3px 4px var(--p-darkcolor);
+  border: 2.5px solid var(--p-darkcolor);
+  border-color: var(--p-darkcolor) !important;
   background-color: #ffffff;
   color: #000;
   font-size: 25px;
@@ -154,9 +148,9 @@ button.navbar-toggler {
 
 ul.dropdown-menu {
   transition: all 0.5s ease-in-out;
-  box-shadow: 3px 4px #000;
-  border: 2.5px solid #000;
-  border-color: #000 !important;
+  box-shadow: 3px 4px var(--p-darkcolor);
+  border: 2.5px solid var(--p-darkcolor);
+  border-color: var(--p-darkcolor) !important;
   background-color: #ffffff;
   color: #000;
   font-size: 14px;
@@ -164,5 +158,24 @@ ul.dropdown-menu {
 }
 ul.dropdown-menu.show {
   transition: all 0.5s ease-in-out;
+}
+
+.dropdown-toggle::after {
+  margin-right: 0.255em;
+}
+
+.dropdown-menu {
+  animation: 0.5s slideup;
+  right: 0;
+}
+
+@keyframes slideup {
+  from {
+    transform: translateY(10%);
+  }
+
+  to {
+    transform: translateY(0);
+  }
 }
 </style>

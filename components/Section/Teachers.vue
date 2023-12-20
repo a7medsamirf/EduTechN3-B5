@@ -42,12 +42,12 @@ const Teachers = [
           </p>
         </div>
 
-        <div class="row row-cols-1 row-cols-lg-4 g-4">
+        <div class="row row-cols-1 row-cols-lg-4 row-cols-md-2 g-4">
           <div class="col" v-for="(item, index) in Teachers" :key="index">
-            <div class="card rounded-3">
-              <div class="img-box rounded-3" :style="{ backgroundColor: item.Bgcolor }">
+            <div class="card rounded-4">
+              <div class="img-box rounded-4" :style="{ backgroundColor: item.Bgcolor }">
                 <img
-                  class="card-img-top rounded-3"
+                  class="card-img-top rounded-4"
                   :src="item.images"
                   :alt="item.title"
                 />
@@ -65,7 +65,7 @@ const Teachers = [
                   <button
                     type="button"
                     arget="_blank"
-                    class="btn btn-light btn-md rounded-3"
+                    class="btn btn-light btn-md rounded-4"
                   >
                     استكشاف
                   </button>

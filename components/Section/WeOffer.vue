@@ -53,21 +53,21 @@ const WeOffer = [
 
         <div class="row g-4">
           <div class="col-lg-6 col-md-12" v-for="(item, index) in WeOffer" :key="index">
-            <div class="d-flex WeOffer rounded-3">
+            <div class="d-flex WeOffer rounded-4">
               <div class="m-2 icon">
                 <img class="WeOffer-img-top" :src="item.images" :alt="item.title" />
               </div>
               <div class="flex-grow-1 me-3 mt-3 WeOffer-body rounded">
                 <h5 class="card-title font-light mb-3">{{ item.title }}</h5>
                 <p class="card-text">{{ item.description }}</p>
-                <button type="button" class="btn btn-light btn-lg d-lg-none rounded-3">
+                <button type="button" class="btn btn-light btn-lg d-lg-none rounded-4">
                   مشاهدة المزيد
                 </button>
               </div>
               <div class="m-2 icon d-flex align-items-center">
                 <button
                   type="button"
-                  class="btn btn-light btn-lg d-none d-lg-block rounded-3"
+                  class="btn btn-light btn-lg d-none d-lg-block rounded-4"
                 >
                   مشاهدة المزيد
                 </button>

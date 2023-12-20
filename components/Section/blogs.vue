@@ -37,11 +37,13 @@ const blogs = [
 
         <div class="row row-cols-1 row-cols-lg-3 g-4">
           <div class="col" v-for="(item, index) in blogs" :key="index">
-            <div class="card p-2 rounded-3">
-              <img class="card-img-top rounded-3" :src="item.images" :alt="item.title" />
-              <span class="category" :style="{ backgroundColor: item.Bgcolor }">{{
-                item.category
-              }}</span>
+            <div class="card p-2 rounded-4">
+              <img class="card-img-top rounded-4" :src="item.images" :alt="item.title" />
+              <span
+                class="category rounded-4"
+                :style="{ backgroundColor: item.Bgcolor }"
+                >{{ item.category }}</span
+              >
               <div class="card-body p-4">
                 <h5 class="card-title mb-3">{{ item.title }}</h5>
                 <p class="card-text">{{ item.description }}</p>
@@ -85,7 +87,6 @@ const blogs = [
     .category {
       position: absolute;
       top: 25px;
-      border-radius: 6px;
       padding: 2px 15px;
       right: 20px;
     }

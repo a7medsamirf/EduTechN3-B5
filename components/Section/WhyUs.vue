@@ -41,6 +41,15 @@ const WhyUs = [
     color: "#465528",
   },
 ];
+const { $anime } = useNuxtApp();
+onMounted(() => {
+  $anime({
+    targets: ".twss",
+    duration: 1200,
+    translateX: 100,
+    delay: $anime.stagger(300, { easing: "easeOutQuad" }),
+  });
+});
 </script>
 
 <template>
@@ -54,11 +63,10 @@ const WhyUs = [
             المهارات الاجتماعية.
           </p>
         </div>
-
         <div class="row row-cols-1 row-cols-lg-5 row-cols-md-3 g-4">
-          <div class="col" v-for="(item, index) in WhyUs" :key="index">
+          <div class="col twss" v-for="(item, index) in WhyUs" :key="index">
             <div
-              class="card rounded-3 h-100 p-3"
+              class="card rounded-4 h-100 p-3"
               :style="{ backgroundColor: item.Bgcolor }"
             >
               <img class="card-img-top" :src="item.images" :alt="item.title" />
