@@ -1,3 +1,8 @@
+<script setup lang="ts">
+const scrollTop = () => {
+  window.scrollTo(0, 0);
+};
+</script>
 <template>
   <div>
     <footer class="py-10" id="footer">
@@ -90,17 +95,10 @@
           </div>
         </div>
       </div>
+      <NuxtLink class="btn btn-primary" @click="scrollTop"><slot /></NuxtLink>
     </footer>
   </div>
 </template>
-
-<script>
-export default {
-  setup() {
-    return {};
-  },
-};
-</script>
 
 <style lang="scss" scoped>
 #footer {

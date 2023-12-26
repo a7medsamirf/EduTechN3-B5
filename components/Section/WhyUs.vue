@@ -41,15 +41,15 @@ const WhyUs = [
     color: "#465528",
   },
 ];
-const { $anime } = useNuxtApp();
-onMounted(() => {
-  $anime({
-    targets: ".twss",
-    duration: 1200,
-    translateX: 100,
-    delay: $anime.stagger(300, { easing: "easeOutQuad" }),
-  });
-});
+/* const { $anime } = useNuxtApp();
+  onMounted(() => {
+    $anime({
+      targets: ".twss",
+      duration: 1200,
+      translateX: 100,
+      delay: $anime.stagger(300, { easing: "easeOutQuad" }),
+    });
+  }); */
 </script>
 
 <template>
